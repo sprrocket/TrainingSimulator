@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingSimulator", "TrainingSimulator\TrainingSimulator.csproj", "{00DCD8A1-B41F-423F-8286-C72215C8E26D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingSimulator.Desktop", "TrainingSimulator\TrainingSimulator.Desktop.csproj", "{00DCD8A1-B41F-423F-8286-C72215C8E26D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingSimulator.Logic", "TrainingSimulator.Logic\TrainingSimulator.Logic.csproj", "{D7D0D7B8-20BF-4EA4-9B4A-25EE73B486F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingSimulator.Data", "TrainingSimulator.Data\TrainingSimulator.Data.csproj", "{F6BE3985-E177-4D22-86C7-B9FFBB997E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{00DCD8A1-B41F-423F-8286-C72215C8E26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00DCD8A1-B41F-423F-8286-C72215C8E26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00DCD8A1-B41F-423F-8286-C72215C8E26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D0D7B8-20BF-4EA4-9B4A-25EE73B486F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D0D7B8-20BF-4EA4-9B4A-25EE73B486F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D0D7B8-20BF-4EA4-9B4A-25EE73B486F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D0D7B8-20BF-4EA4-9B4A-25EE73B486F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BE3985-E177-4D22-86C7-B9FFBB997E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BE3985-E177-4D22-86C7-B9FFBB997E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BE3985-E177-4D22-86C7-B9FFBB997E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BE3985-E177-4D22-86C7-B9FFBB997E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
