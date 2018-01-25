@@ -83,9 +83,15 @@
     <None Include="Resources\star.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TrainingSimulator.Data\TrainingSimulator.Data.csproj">
-      <Project>{f6be3985-e177-4d22-86c7-b9ffbb997e00}</Project>
-      <Name>TrainingSimulator.Data</Name>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrainingSimulator.Logic\TrainingSimulator.Logic.csproj">
+      <Project>{d7d0d7b8-20bf-4ea4-9b4a-25ee73b486f0}</Project>
+      <Name>TrainingSimulator.Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
