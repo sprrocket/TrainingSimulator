@@ -196,6 +196,7 @@
             // 
             // mapGrid10
             // 
+            this.mapGrid10.BackColor = System.Drawing.SystemColors.Control;
             this.mapGrid10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.mapGrid10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mapGrid10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -204,7 +205,7 @@
             this.mapGrid10.Name = "mapGrid10";
             this.mapGrid10.Size = new System.Drawing.Size(136, 131);
             this.mapGrid10.TabIndex = 10;
-            this.mapGrid10.UseVisualStyleBackColor = true;
+            this.mapGrid10.UseVisualStyleBackColor = false;
             // 
             // mapGrid11
             // 
@@ -234,7 +235,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.mapPanel);
             this.Name = "TrainingSimulatorForm";
-            this.Text = "Form1";
+            this.Text = "chrome";
             this.mapPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -20,10 +20,10 @@ namespace TrainingSimulator
             map.LoadMapData(TrainingSimulator.Data.RoomData.data);
             Room currentRoom = map.roomLayout[3, 1];
             richTextBox1.Text = map.roomLayout[3, 1].GetDescription;
-            mapGrid10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            
+            mapGrid10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;            
             mapGrid10.BackgroundImage = global::TrainingSimulator.Properties.Resources.star1;
             mapGrid10.BackgroundImage = null;
+            mapGrid10.BackColor = System.Drawing.Color.Red;
             
         }
 
