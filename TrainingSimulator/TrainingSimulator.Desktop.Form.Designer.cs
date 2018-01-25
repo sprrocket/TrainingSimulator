@@ -31,11 +31,12 @@ namespace TrainingSimulator
         private void InitializeComponent()
         {
             this.mapPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.upButton = new System.Windows.Forms.Button();
-            this.leftButton = new System.Windows.Forms.Button();
-            this.rightButton = new System.Windows.Forms.Button();
-            this.downButton = new System.Windows.Forms.Button();
+            this.descriptionBox = new System.Windows.Forms.RichTextBox();
+            this.northBtn = new System.Windows.Forms.Button();
+            this.westBtn = new System.Windows.Forms.Button();
+            this.eastBtn = new System.Windows.Forms.Button();
+            this.southBtn = new System.Windows.Forms.Button();
+            this.roomNameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mapPanel
@@ -54,89 +55,105 @@ namespace TrainingSimulator
             this.mapPanel.Size = new System.Drawing.Size(428, 539);
             this.mapPanel.TabIndex = 0;
             // 
-            // richTextBox1
+            // descriptionBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(745, 23);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(236, 165);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.descriptionBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.descriptionBox.Location = new System.Drawing.Point(447, 29);
+            this.descriptionBox.Name = "descriptionBox";
+            this.descriptionBox.ReadOnly = true;
+            this.descriptionBox.Size = new System.Drawing.Size(307, 220);
+            this.descriptionBox.TabIndex = 1;
+            this.descriptionBox.TabStop = false;
+            this.descriptionBox.Text = "";
             // 
-            // upButton
+            // northBtn
             // 
-            this.upButton.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
-            this.upButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.upButton.Location = new System.Drawing.Point(560, 298);
-            this.upButton.Name = "upButton";
-            this.upButton.Size = new System.Drawing.Size(60, 60);
-            this.upButton.TabIndex = 2;
-            this.upButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.upButton.UseVisualStyleBackColor = true;
-            this.upButton.Click += new System.EventHandler(this.button1_Click);
+            this.northBtn.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
+            this.northBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.northBtn.Location = new System.Drawing.Point(574, 294);
+            this.northBtn.Name = "northBtn";
+            this.northBtn.Size = new System.Drawing.Size(70, 70);
+            this.northBtn.TabIndex = 2;
+            this.northBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.northBtn.UseVisualStyleBackColor = true;
+            this.northBtn.Click += new System.EventHandler(this.DirButtonClick);
             // 
-            // leftButton
+            // westBtn
             // 
-            this.leftButton.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
-            this.leftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.leftButton.Location = new System.Drawing.Point(494, 364);
-            this.leftButton.Name = "leftButton";
-            this.leftButton.Size = new System.Drawing.Size(60, 60);
-            this.leftButton.TabIndex = 2;
-            this.leftButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.leftButton.UseVisualStyleBackColor = true;
-            this.leftButton.Click += new System.EventHandler(this.button1_Click);
+            this.westBtn.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
+            this.westBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.westBtn.Location = new System.Drawing.Point(498, 370);
+            this.westBtn.Name = "westBtn";
+            this.westBtn.Size = new System.Drawing.Size(70, 70);
+            this.westBtn.TabIndex = 2;
+            this.westBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.westBtn.UseVisualStyleBackColor = true;
+            this.westBtn.Click += new System.EventHandler(this.DirButtonClick);
             // 
-            // rightButton
+            // eastBtn
             // 
-            this.rightButton.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
-            this.rightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.rightButton.Location = new System.Drawing.Point(626, 364);
-            this.rightButton.Name = "rightButton";
-            this.rightButton.Size = new System.Drawing.Size(60, 60);
-            this.rightButton.TabIndex = 2;
-            this.rightButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rightButton.UseVisualStyleBackColor = true;
-            this.rightButton.Click += new System.EventHandler(this.button1_Click);
+            this.eastBtn.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
+            this.eastBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.eastBtn.Location = new System.Drawing.Point(650, 370);
+            this.eastBtn.Name = "eastBtn";
+            this.eastBtn.Size = new System.Drawing.Size(70, 70);
+            this.eastBtn.TabIndex = 2;
+            this.eastBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.eastBtn.UseVisualStyleBackColor = true;
+            this.eastBtn.Click += new System.EventHandler(this.DirButtonClick);
             // 
-            // downButton
+            // southBtn
             // 
-            this.downButton.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
-            this.downButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.downButton.Location = new System.Drawing.Point(560, 430);
-            this.downButton.Name = "downButton";
-            this.downButton.Size = new System.Drawing.Size(60, 60);
-            this.downButton.TabIndex = 2;
-            this.downButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.downButton.UseVisualStyleBackColor = true;
-            this.downButton.Click += new System.EventHandler(this.button1_Click);
+            this.southBtn.BackgroundImage = global::TrainingSimulator.Properties.Resources.arrow;
+            this.southBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.southBtn.Location = new System.Drawing.Point(574, 446);
+            this.southBtn.Name = "southBtn";
+            this.southBtn.Size = new System.Drawing.Size(70, 70);
+            this.southBtn.TabIndex = 2;
+            this.southBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.southBtn.UseVisualStyleBackColor = true;
+            this.southBtn.Click += new System.EventHandler(this.DirButtonClick);
+            // 
+            // roomNameLabel
+            // 
+            this.roomNameLabel.AutoSize = true;
+            this.roomNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomNameLabel.Location = new System.Drawing.Point(447, 9);
+            this.roomNameLabel.Name = "roomNameLabel";
+            this.roomNameLabel.Size = new System.Drawing.Size(0, 20);
+            this.roomNameLabel.TabIndex = 3;
+            this.roomNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TrainingSimulatorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 642);
-            this.Controls.Add(this.rightButton);
-            this.Controls.Add(this.downButton);
-            this.Controls.Add(this.leftButton);
-            this.Controls.Add(this.upButton);
-            this.Controls.Add(this.richTextBox1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(766, 562);
+            this.Controls.Add(this.roomNameLabel);
+            this.Controls.Add(this.eastBtn);
+            this.Controls.Add(this.southBtn);
+            this.Controls.Add(this.westBtn);
+            this.Controls.Add(this.northBtn);
+            this.Controls.Add(this.descriptionBox);
             this.Controls.Add(this.mapPanel);
+            this.MaximizeBox = false;
             this.Name = "TrainingSimulatorForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "chrome";
             this.Load += new System.EventHandler(this.TrainingSimulatorForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel mapPanel;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private Button upButton;
-        private Button leftButton;
-        private Button rightButton;
-        private Button downButton;
+        private System.Windows.Forms.RichTextBox descriptionBox;
+        private Label roomNameLabel;
+        public Button northBtn;
+        public Button westBtn;
+        public Button eastBtn;
+        public Button southBtn;
     }
 }
 
