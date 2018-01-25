@@ -20,7 +20,7 @@ namespace TrainingSimulator.Logic
         public static int GetCurrentColNum { get { return (int)GameData.GetCurrentRoom.GetCol; } }        
 
         private static void SetNewRoom(Room newRoom) { GameData.SetCurrentRoom = newRoom; }
-
+        // REQ: switch statement
         /// <summary>
         /// This has a very long switch statement in it. I'm so sorry.
         /// </summary>
@@ -31,7 +31,7 @@ namespace TrainingSimulator.Logic
             switch ((sender as Button).Name)
             {
                 case "northBtn":
-                    if (cr.GetNorth != null){
+                    if (cr.GetNorth != null){// REQ: if /else if/else statement
                         SetNewRoom(cr.GetNorth);
                         return emptyTuple;
                     }

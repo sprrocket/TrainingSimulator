@@ -40,7 +40,7 @@ namespace TrainingSimulator
             int rows = MapManager.GetGridRowSize;
             int cols = MapManager.GetGridColSize;
             buttonArray = new Button[rows, cols];
-            for (int r = 0; r < rows; r++)
+            for (int r = 0; r < rows; r++)// REQ: For loop
             {
                 for (int c = 0; c < cols; c++)
                 {
@@ -70,7 +70,7 @@ namespace TrainingSimulator
             buttonArray[MapManager.GetCurrentRowNum, MapManager.GetCurrentColNum].BackgroundImage = null;
             Button button = sender as Button;
             var a = MapManager.MoveRooms(sender);
-            if (a.Item1 == true)
+            if (a.Item1 == true)// REQ: if statement
             {
                 buttonArray[(int)a.Item2, (int)a.Item3].BackgroundImage = Properties.Resources.X; 
             }

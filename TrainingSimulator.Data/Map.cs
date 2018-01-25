@@ -20,7 +20,7 @@ namespace TrainingSimulator.Data
             {null, new Room(), null }
         };
 
-        public Map()//Inits the map and begins populating the necessary information for each room
+        public Map()
         {
             for (int r = 0; r < RoomData.GetRowsOfRooms; r++)
             {
@@ -36,7 +36,7 @@ namespace TrainingSimulator.Data
         }
 
         private Room FetchRoom(int r, int c)
-        {
+        {   //REQ: if/else statement
             if (r >= 0 && r < RoomData.GetRowsOfRooms && c >= 0 && c < RoomData.GetColsOfRooms)
             {
                 return roomGrid[r, c];
