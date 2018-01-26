@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlockedCell.cs" />
     <Compile Include="MapLoader.cs" />
     <Compile Include="MapManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MapManager.RoomMover.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TrainingSimulator.Data\TrainingSimulator.Data.csproj">

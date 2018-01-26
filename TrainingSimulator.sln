@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingSimulator.Logic", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingSimulator.Data", "TrainingSimulator.Data\TrainingSimulator.Data.csproj", "{F6BE3985-E177-4D22-86C7-B9FFBB997E00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{632BFD58-9F76-4C7E-A7AB-D141A30051FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PAL", "PAL", "{69B2B677-BE19-447B-99CB-97E68C7EB676}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BAL", "BAL", "{E861A517-6C76-4B61-B7C0-59135CCEC51C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +36,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00DCD8A1-B41F-423F-8286-C72215C8E26D} = {69B2B677-BE19-447B-99CB-97E68C7EB676}
+		{D7D0D7B8-20BF-4EA4-9B4A-25EE73B486F0} = {E861A517-6C76-4B61-B7C0-59135CCEC51C}
+		{F6BE3985-E177-4D22-86C7-B9FFBB997E00} = {632BFD58-9F76-4C7E-A7AB-D141A30051FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8C2A6A0-4943-46CC-910E-E401F4B4F5AF}

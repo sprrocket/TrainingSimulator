@@ -45,6 +45,7 @@
     <Compile Include="Map.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="RoomData.cs" />
+    <Compile Include="RoomGetSet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

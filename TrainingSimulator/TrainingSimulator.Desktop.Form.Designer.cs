@@ -74,6 +74,7 @@ namespace TrainingSimulator
             this.northBtn.Name = "northBtn";
             this.northBtn.Size = new System.Drawing.Size(70, 70);
             this.northBtn.TabIndex = 2;
+            this.northBtn.TabStop = false;
             this.northBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.northBtn.UseVisualStyleBackColor = true;
             this.northBtn.Click += new System.EventHandler(this.DirButtonClick);
@@ -86,6 +87,7 @@ namespace TrainingSimulator
             this.westBtn.Name = "westBtn";
             this.westBtn.Size = new System.Drawing.Size(70, 70);
             this.westBtn.TabIndex = 2;
+            this.westBtn.TabStop = false;
             this.westBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.westBtn.UseVisualStyleBackColor = true;
             this.westBtn.Click += new System.EventHandler(this.DirButtonClick);
@@ -98,6 +100,7 @@ namespace TrainingSimulator
             this.eastBtn.Name = "eastBtn";
             this.eastBtn.Size = new System.Drawing.Size(70, 70);
             this.eastBtn.TabIndex = 2;
+            this.eastBtn.TabStop = false;
             this.eastBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.eastBtn.UseVisualStyleBackColor = true;
             this.eastBtn.Click += new System.EventHandler(this.DirButtonClick);
@@ -110,6 +113,7 @@ namespace TrainingSimulator
             this.southBtn.Name = "southBtn";
             this.southBtn.Size = new System.Drawing.Size(70, 70);
             this.southBtn.TabIndex = 2;
+            this.southBtn.TabStop = false;
             this.southBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.southBtn.UseVisualStyleBackColor = true;
             this.southBtn.Click += new System.EventHandler(this.DirButtonClick);

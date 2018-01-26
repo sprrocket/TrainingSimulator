@@ -13,15 +13,19 @@ namespace TrainingSimulator.Data
      *  x x x
      *  □ x □  <-starting at the bottom x. □'s are blocked off.
      */
+
+    /// <summary>
+    /// This string literal will hold all of the information needed for the rooms in the training simulator.
+    ///We'll be using RegEx, so keep the formatting exact! This includes whitespace in the IDE.
+    ///Numbers are formatted as row,column
+    /// </summary>
     public static class RoomData
     {
         private const int ROWS_OF_ROOMS = 4;
         private const int COLUMNS_OF_ROOMS = 3;
         public static Regex namesRegex = new Regex(@"{(\d+), (\d+)}, {(.+)}, {(.+)}");
         public const string data =
-@"This string literal will hold all of the information needed for the rooms in the training simulator.
-We'll be using RegEx, so keep the formatting exact! This includes whitespace in the IDE.
-Numbers are formatted as row,column
+@"
 {3, 1}, {Entrance}, {Walking in from the south door, you descend down a flight of stars to what appears to be a dingy stock room. A dim lamp swings eerily overhead.}
 
 {2, 0}, {Wine Cellar}, {The stench of rancid fruit all but overwhelms you as you step into the barely-lit cellar, broken wine bottles littering the floor. You think you see a cockroach drunkenly skitter across the floor. Gross.}

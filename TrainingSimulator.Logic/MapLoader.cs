@@ -10,7 +10,12 @@ namespace TrainingSimulator.Logic
 {
     public class MapLoader
     {
-        private static void ProcessMatch(Match match, Map activeMap)
+        /// <summary>
+        /// Attached the information from Data.RoomData to the map
+        /// </summary>
+        /// <param name="match"></param>
+        /// <param name="activeMap"></param>
+        private static void ParseMatch(Match match, Map activeMap)
         {
             int row = Int32.Parse(match.Groups[1].Value);
             int col = Int32.Parse(match.Groups[2].Value);
@@ -23,6 +28,9 @@ namespace TrainingSimulator.Logic
             }
         }
 
+        /// <summary>
+        /// Loads the Regular Expressions from the DAL and parses the 
+        /// </summary>
         public static void LoadMapData()
         {
             MatchCollection matches = RoomData.namesRegex.Matches(RoomData.data);
@@ -30,7 +38,7 @@ namespace TrainingSimulator.Logic
             {
                 foreach (Match match in matches)
                 {
-                    ProcessMatch(match, GameData.GetActiveMap);
+                    ParseMatch(match, GameData.GetActiveMap);
                 }
             }
             GameData.GetActiveMap.GetRoom[3, 1].SetDiscovered = true;//Set the initial room to "discovered"

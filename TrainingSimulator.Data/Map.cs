@@ -7,11 +7,14 @@ using System.Text.RegularExpressions;
 
 namespace TrainingSimulator.Data
 {
+    /// <summary>
+    /// Acts as a virtual layout for the Rooms.
+    /// </summary>
     public class Map
     {
-        public string[,] roomName;
-        public string[,] roomDescription;
-
+        /// <summary>
+        /// The hard-coded layout of the rooms
+        /// </summary>
         private Room[,] roomGrid =
         {
             {null, new Room(), null },
@@ -20,6 +23,9 @@ namespace TrainingSimulator.Data
             {null, new Room(), null }
         };
 
+        /// <summary>
+        /// Inits the Map and connects the rooms that exist together
+        /// </summary>
         public Map()
         {
             for (int r = 0; r < RoomData.GetRowsOfRooms; r++)
@@ -35,6 +41,12 @@ namespace TrainingSimulator.Data
             }
         }
 
+        /// <summary>
+        /// Used by Map() to connect rooms
+        /// </summary>
+        /// <param name="r">row</param>
+        /// <param name="c">column</param>
+        /// <returns></returns>
         private Room FetchRoom(int r, int c)
         {   //REQ: if/else statement
             if (r >= 0 && r < RoomData.GetRowsOfRooms && c >= 0 && c < RoomData.GetColsOfRooms)
@@ -45,6 +57,5 @@ namespace TrainingSimulator.Data
         }
 
         public Room[,] GetRoom { get { return roomGrid; } }
-
     }
 }
